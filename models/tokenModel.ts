@@ -10,4 +10,4 @@ const TokenSchema = new Schema<IToken>({
     refreshToken: { type: String, required: true }
 })
 
-export const Token = model<IToken>('Token', TokenSchema);
+export const TokenModel = model<IToken>('Token', TokenSchema);

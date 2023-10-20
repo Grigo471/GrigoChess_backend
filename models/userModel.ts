@@ -1,6 +1,6 @@
 import {Schema, model} from 'mongoose';
 
-interface IUser {
+export interface IUser {
     username: string;
     password: string;
 }
@@ -10,4 +10,4 @@ const UserSchema = new Schema<IUser>({
     password: { type: String, required: true }
 })
 
-export const User = model<IUser>('User', UserSchema);
+export const UserModel = model<IUser>('User', UserSchema);
